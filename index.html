@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -21,8 +28,12 @@
         <nav class="header-nav">
           <div class="nav-logo">
             <!-- logo -->
-            <ion-icon name="car-sport-outline"></ion-icon>
-            <span>Elettrico</span>
+            <a href="#"
+              ><img
+                class="logo-img"
+                src="img/logo.png"
+                alt="Logo of ELETTRICO company"
+            /></a>
           </div>
           <ul class="nav-list">
             <li class="list-item">
@@ -42,86 +53,91 @@
       </div>
     </header>
     <main>
-      <section class="section-hero grid grid--2-col">
-        <div class="hero-text">
-          <h1>Enjoy the future of the cars now</h1>
-          <p>
-            Rent one of our unique cars and experience the feeling you never had
-            before. Feel what is it to experience a future with us.
-          </p>
-          <div class="hero-buttons">
-            <a class="btn btn-experience" href="#">Experience the future</a>
-            <a class="btn btn-learn-more" href="#">Learn more ↓</a>
+      <section class="section-hero">
+        <div class="hero-box grid grid--2-col">
+          <div class="hero-text">
+            <h1>Enjoy the future of the cars now</h1>
+            <p>
+              Rent one of our unique cars and experience the feeling you never
+              had before. Feel what is it to experience a future with us.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn btn-experience" href="#">Experience the future</a>
+              <a class="btn btn-learn-more" href="#">Learn more ↓</a>
+            </div>
           </div>
-        </div>
-        <div class="hero-img-box">
-          <img
-            class="hero-img"
-            src="img/hero-img-3.png"
-            alt="Int his picture is electric car from Audi type e tron"
-          />
+          <div class="hero-img-box">
+            <source srcset="img/hero-img-2.webp" type="image/webp" />
+            <img
+              class="hero-img"
+              src="img/hero-img-2.webp"
+              alt="Int his picture is electric car from Audi type e tron"
+            />
+          </div>
         </div>
       </section>
 
-      <section class="section-how container">
-        <div class="container flex flex-dir--column">
-          <span class="section--subheader">How it works</span>
-          <h2 class="section--header">Rent a car in three easy steps</h2>
-          <div class="section-how-location grid">
-            <div class="section-text--box">
-              <span class="step-number">01</span>
-              <h2>Download app and sign up</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
-                aspernatur aliquam! Ducimus nihil minus laboriosam ullam
-                veritatis possimus, quaerat aliquid ab libero laborum impedit
-                ipsum beatae sed culpa dolore deserunt.
-              </p>
+      <section class="section-how">
+        <div class="container">
+          <div class="flex flex-dir--column">
+            <span class="section--subheader">How it works</span>
+            <h2 class="section--header">Rent a car in three easy steps</h2>
+            <div class="section-how-location grid">
+              <div class="section-text--box">
+                <span class="step-number">01</span>
+                <h2>Download app and sign up</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                  aspernatur aliquam! Ducimus nihil minus laboriosam ullam
+                  veritatis possimus, quaerat aliquid ab libero laborum impedit
+                  ipsum beatae sed culpa dolore deserunt.
+                </p>
+              </div>
+              <div class="section-img--box">
+                <img
+                  class="section-img"
+                  src="img/mobile/mobile-1.webp"
+                  alt="Int his picture is electric car from Audi type e tron"
+                />
+              </div>
             </div>
-            <div class="section-img--box">
-              <img
-                class="section-img"
-                src="img/mobile/mobile-1.png"
-                alt="Int his picture is electric car from Audi type e tron"
-              />
+            <div class="section-how-car grid">
+              <div class="section-text--box">
+                <span class="step-number">02</span>
+                <h2>Choose a car</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                  aspernatur aliquam! Ducimus nihil minus laboriosam ullam
+                  veritatis possimus, quaerat aliquid ab libero laborum impedit
+                  ipsum beatae sed culpa dolore deserunt.
+                </p>
+              </div>
+              <div class="section-img--box">
+                <img
+                  class="section-img"
+                  src="img/mobile/mobile-1.png"
+                  alt="Int his picture is electric car from Audi type e tron"
+                />
+              </div>
             </div>
-          </div>
-          <div class="section-how-car grid">
-            <div class="section-text--box">
-              <span class="step-number">02</span>
-              <h2>Choose a car</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
-                aspernatur aliquam! Ducimus nihil minus laboriosam ullam
-                veritatis possimus, quaerat aliquid ab libero laborum impedit
-                ipsum beatae sed culpa dolore deserunt.
-              </p>
-            </div>
-            <div class="section-img--box">
-              <img
-                class="section-img"
-                src="img/mobile/mobile-1.png"
-                alt="Int his picture is electric car from Audi type e tron"
-              />
-            </div>
-          </div>
-          <div class="section-how-payment grid">
-            <div class="section-text--box">
-              <span class="step-number">03</span>
-              <h2>Start driving</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
-                aspernatur aliquam! Ducimus nihil minus laboriosam ullam
-                veritatis possimus, quaerat aliquid ab libero laborum impedit
-                ipsum beatae sed culpa dolore deserunt.
-              </p>
-            </div>
-            <div class="section-img--box">
-              <img
-                class="section-img"
-                src="img/mobile/mobile-1.png"
-                alt="Int his picture is electric car from Audi type e tron"
-              />
+            <div class="section-how-payment grid">
+              <div class="section-text--box">
+                <span class="step-number">03</span>
+                <h2>Start driving</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                  aspernatur aliquam! Ducimus nihil minus laboriosam ullam
+                  veritatis possimus, quaerat aliquid ab libero laborum impedit
+                  ipsum beatae sed culpa dolore deserunt.
+                </p>
+              </div>
+              <div class="section-img--box">
+                <img
+                  class="section-img"
+                  src="img/mobile/mobile-1.png"
+                  alt="Int his picture is electric car from Audi type e tron"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -239,75 +255,79 @@
           </div>
         </div>
       </section>
-      <section class="section-longterm-cta container">
-        <span class="section--subheader">Long term rent</span>
-        <h2 class="section--header">Rent a car for up to 3 months</h2>
+      <section class="section-longterm-cta">
+        <div class="container">
+          <span class="section--subheader">Long term rent</span>
+          <h2 class="section--header">Rent a car for up to 3 months</h2>
 
-        <div class="cta-form-box grid grid--2-col">
-          <div class="cta-text-box">
-            <h3 class="cta-header">Get your personalized plan</h3>
-            <p class="cta-text">
-              We will send you email with meeting informations where we will
-              went through whole rent with you. We are looking forward to see
-              you!
-            </p>
-            <form action="submit" class="cta-form grid grid--2-col">
-              <div>
-                <label for="fullName">Full name:</label>
-                <input
-                  type="text"
-                  id="fullName"
-                  required
-                  placeholder="John Smith"
-                />
-              </div>
-              <div>
-                <label for="email"> Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  placeholder="example@example.com"
-                />
-              </div>
-              <div>
-                <label for="carClass">Choose a car class: </label>
-                <select id="carClass" required>
-                  <option value=""></option>
-                  <option value="notyet">I do not know yet</option>
-                  <option value="economy">Economy</option>
-                  <option value="standard">Standard</option>
-                  <option value="premium">Premium</option>
-                </select>
-              </div>
-              <button class="btn btn--form">Submit</button>
-            </form>
-          </div>
-          <div class="cta-form-img">
-            <img class="cta-img-box" src="img/cta-form-img.jpg" alt="" />
+          <div class="cta-form-box grid">
+            <div class="cta-text-box">
+              <h3 class="cta-header">Get your personalized plan</h3>
+              <p class="cta-text">
+                We will send you email with meeting informations where we will
+                went through whole rent with you. We are looking forward to see
+                you!
+              </p>
+              <form action="submit" class="cta-form grid grid--2-col">
+                <div>
+                  <label for="fullName">Full name:</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    required
+                    placeholder="John Smith"
+                  />
+                </div>
+                <div>
+                  <label for="email"> Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="example@example.com"
+                  />
+                </div>
+                <div>
+                  <label for="carClass">Choose a car class: </label>
+                  <select id="carClass" required>
+                    <option value=""></option>
+                    <option value="notyet">I do not know yet</option>
+                    <option value="economy">Economy</option>
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Submit</button>
+              </form>
+            </div>
+            <div class="cta-form-img">
+              <img class="cta-img-box" src="img/cta-form-img.webp" alt="" />
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        Icons made by
-        <a
-          href="https://www.flaticon.com/authors/those-icons"
-          title="Those Icons"
-          >Those Icons</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </div>
-      <div>
-        Icons made by
-        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
+    <footer class="section-footer">
+      <div class="container">
+        <div>
+          Icons made by
+          <a
+            href="https://www.flaticon.com/authors/those-icons"
+            title="Those Icons"
+            >Those Icons</a
+          >
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </div>
+        <div>
+          Icons made by
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </div>
       </div>
     </footer>
   </body>
