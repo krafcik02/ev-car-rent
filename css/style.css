@@ -430,7 +430,7 @@ HEADER SECTION
 }
 
 .cta-text {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.4;
   margin-bottom: 3.8rem;
 }
@@ -473,6 +473,7 @@ HEADER SECTION
   padding: 1.2rem;
   border-radius: 10px;
   background-color: #1b1b1b;
+  border-color: #1b1b1b;
   color: #fff;
   align-self: flex-end;
 }
