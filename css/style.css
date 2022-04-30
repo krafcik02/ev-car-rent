@@ -457,7 +457,7 @@ HEADER SECTION
 
 .cta-form select {
   width: 100%;
-
+  border: none;
   font-size: 2.4rem;
   font-weight: 700;
   padding: 1.2rem;
@@ -473,12 +473,17 @@ HEADER SECTION
   padding: 1.2rem;
   border-radius: 10px;
   background-color: #1b1b1b;
-  border-color: #1b1b1b;
+  border: 0px solid;
   color: #fff;
   align-self: flex-end;
+  transition: 300ms all;
+  cursor: pointer;
 }
 
 .btn--form:hover {
+  background-color: #fff;
+  /* border-color: #fff; */
+  color: #1b1b1b;
 }
 
 img.cta-img-box {
