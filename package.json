@@ -1,0 +1,26 @@
+{
+  "name": "ev-car-rent",
+  "description": "This website is for renting ev cars.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel rent.html",
+    "build": "parcel build rent.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krafcik02/ev-car-rent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krafcik02/ev-car-rent/issues"
+  },
+  "homepage": "https://github.com/krafcik02/ev-car-rent#readme",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "chart.js": "^3.8.2"
+  }
+}

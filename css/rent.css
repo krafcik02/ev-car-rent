@@ -1,0 +1,360 @@
+:root {
+  --main-background: #051017;
+  --main-color: rgba(54, 162, 235, 1);
+  --light-main-color: rgb(94, 181, 239);
+  --dark-main-color: rgb(43, 130, 188);
+  --main-text-white: #fff;
+}
+
+body {
+  background-color: #0e1407;
+  color: var(--main-text-white);
+}
+
+/* 
+Login screen 
+*/
+
+.container--login-outer {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.1s;
+}
+
+.container--login-middle {
+  width: 50rem;
+  height: 35rem;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25rem, -15rem);
+
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+
+.container--login-inner {
+  width: 100%;
+  height: 25rem;
+  padding: 1rem 4rem;
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-input {
+  /* margin: 0 auto; */
+  width: 100%;
+  height: inherit;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.login-input label {
+  display: block;
+  width: 80%;
+  color: var(--main-background);
+
+  margin: 0 0 1rem 2.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.login-input input {
+  /* display: block; */
+  border: none;
+  box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 20%);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  width: 80%;
+
+  background-color: #fff;
+  color: #000;
+  letter-spacing: 0.5px;
+
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.login-input input:focus {
+  border: none;
+  box-shadow: none;
+}
+.login-button {
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: var(--main-background);
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  transition: all 400ms;
+}
+.login-button:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+/*
+    User Logged in
+*/
+
+/* 
+Navigation
+*/
+
+nav {
+  background-color: var(--main-color);
+}
+.nav-bar {
+  min-height: 8vh;
+  max-height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.logged-user {
+  margin-right: 3rem;
+  font-weight: 700;
+}
+.logout-user {
+  padding: 0.8rem 1.6rem;
+  font-weight: 700;
+  border-radius: 5px;
+
+  color: var(--main-text-white);
+  color: var(--main-background);
+  border: none;
+
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+.logout-user:hover {
+  cursor: pointer;
+  color: var(--main-text-white);
+  background-color: var(--dark-main-color);
+  border: 1px solid var(--dark-main-color);
+}
+
+/* 
+Section main
+ */
+
+.section-main {
+  display: grid;
+  max-height: 80vh;
+  min-height: 80vh;
+  grid-template-columns: 20% 60% 20%;
+  /* padding; */
+  /* border-top: 1px solid white; */
+  align-items: center;
+}
+
+.section-main div:nth-child(1) {
+}
+
+.section-main-box {
+  max-height: inherit;
+}
+
+.side-navigation {
+}
+
+.side-nav {
+  border-right: 1px solid white;
+}
+
+.side-nav-tabs {
+  margin-top: 10rem;
+  text-align: left;
+  margin-left: 5rem;
+}
+.side-nav-tabs li {
+  font-size: 2.1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+
+  transition: all 0.3s;
+}
+
+.side-nav-tabs li:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.active-side-tab li:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+/*
+  Graphs
+*/
+.content-box-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.chart-rides {
+  width: 79%;
+  margin-top: 6rem;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  grid-column: 2 / 5;
+  grid-row: 2/3;
+}
+
+/* 
+  Main posts
+*/
+.main-box-posts {
+  border: 1px solid white;
+}
+
+.box-text {
+  padding: 2rem 2rem;
+  /* border: 1px solid var(--main-color); */
+}
+.box-username {
+  grid-column: 1 /3;
+}
+.box-username h2 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  align-self: center;
+}
+.box-username span {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: var(--main-color);
+  align-self: center;
+}
+
+.box-username a {
+  /* background-color: var(--main-color); */
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 3.6rem;
+  padding: 1.6rem 3.2rem;
+  width: 60%;
+  align-self: center;
+  /* border-radius: 25px; */
+  transition: all 0.5s;
+}
+.box-username a:hover {
+  background-color: var(--main-color);
+  color: var(--main-text-white);
+}
+.box-credits {
+  align-items: center;
+  justify-content: center;
+  grid-column: 3 /5;
+}
+.box-credits h2 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  align-self: center;
+}
+
+.box-credits span {
+  font-size: 3rem;
+
+  color: var(--main-color);
+  font-weight: 700;
+  align-self: center;
+}
+
+.box-credits p {
+  margin-top: 1.6rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  align-self: center;
+}
+
+.box-credits a:link,
+.box-credits a:visited {
+  color: var(--main-text-white);
+  font-size: 1.4rem;
+  margin-top: auto;
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-main-color);
+}
+
+/* 
+  Rent section
+*/
+
+.box-rent {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.box-rent label {
+  display: block;
+  text-align: center;
+  align-self: flex-start;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+.box-rent select {
+  margin: 0 auto;
+  display: block;
+  margin-top: 1.4rem;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+.btn-direction {
+  display: block;
+  align-self: flex-end;
+  width: 10rem;
+  margin-top: 2.8rem;
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: var(--main-text-white);
+  color: var(--main-background);
+
+  border-radius: 5px;
+}
+
+.buttons-directions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8rem;
+}
+
+/* box cars */
+.box-cars {
+  grid-column: 1 / 5;
+}

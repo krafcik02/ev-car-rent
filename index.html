@@ -12,14 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+
     <title>EV-car-rent</title>
   </head>
   <body>
@@ -46,7 +39,9 @@
               <a href="#" class="list-item--link">Long term rent</a>
             </li>
             <li class="list-item">
-              <a href="#" class="list-item--link cta-link">Get Your EV</a>
+              <a href="/rent.html" class="list-item--link cta-link"
+                >Get Your EV</a
+              >
             </li>
           </ul>
         </nav>
@@ -77,12 +72,12 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section section-how section-hidden">
         <div class="container">
           <div class="flex flex-dir--column">
             <span class="section--subheader">How it works</span>
             <h2 class="section--header">Rent a car in three easy steps</h2>
-            <div class="section-how-location grid">
+            <div class="section-how-location grid" data-name="how-it-works">
               <div class="section-text--box">
                 <span class="step-number">01</span>
                 <h2>Download app and sign up</h2>
@@ -142,12 +137,12 @@
           </div>
         </div>
       </section>
-      <section class="section-car-categories">
+      <section class="section section-car-categories section-hidden">
         <div class="container">
           <span class="section--subheader">Car categories</span>
           <h2 class="section--header">Choose what suits you the best</h2>
           <div class="car-categories-box grid grid--3-col">
-            <div class="car-category-box">
+            <div class="car-category-box" data-card="1">
               <span class="car-category--header">Economy</span>
               <span class="car-category--subheader">Go green</span>
               <div class="car-category--lists flex">
@@ -182,7 +177,7 @@
                 </ul>
               </div>
             </div>
-            <div class="car-category-box special-category-box">
+            <div class="car-category-box special-category-box" data-card="2">
               <span class="car-category--header">Standard</span>
               <span class="car-category--subheader">Best value</span>
               <div class="car-category--lists flex">
@@ -217,7 +212,7 @@
                 </ul>
               </div>
             </div>
-            <div class="car-category-box">
+            <div class="car-category-box" data-card="3">
               <span class="car-category--header">Premium</span>
               <span class="car-category--subheader">Enjoy power</span>
               <div class="car-category--lists flex">
@@ -255,18 +250,18 @@
           </div>
         </div>
       </section>
-      <section class="section-longterm-cta">
+      <section class="section section-longterm-cta section-hidden">
         <div class="container">
           <span class="section--subheader">Long term rent</span>
           <h2 class="section--header">Rent a car for up to 3 months</h2>
 
           <div class="cta-form-box grid">
             <div class="cta-text-box">
-              <h3 class="cta-header">Get your personalized plan</h3>
+              <h3 class="cta-header">Subscribe to our newsletter</h3>
               <p class="cta-text">
-                We will send you email with meeting informations where we will
-                went through whole process with you. We are looking forward to
-                see you!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, amet nisi quas molestias sint perferendis aliquam
+                commodi cum.
               </p>
               <form action="submit" class="cta-form grid grid--2-col">
                 <div>
@@ -288,13 +283,12 @@
                   />
                 </div>
                 <div>
-                  <label for="carClass">Choose a car class: </label>
+                  <label for="carClass">Where have you heard about us: </label>
                   <select id="carClass" required>
                     <option value=""></option>
-                    <option value="notyet">I do not know yet</option>
-                    <option value="economy">Economy</option>
-                    <option value="standard">Standard</option>
-                    <option value="premium">Premium</option>
+                    <option value="socials">Social media</option>
+                    <option value="friends">Friends</option>
+                    <option value="tv">TV</option>
                   </select>
                 </div>
                 <button class="btn btn--form">Submit</button>
@@ -307,7 +301,7 @@
         </div>
       </section>
     </main>
-    <footer class="section-footer">
+    <footer class="section section-footer section-hidden">
       <div class="container border-solid grid grid-footer">
         <div class="logo-box flex flex-dir--column">
           <a class="footer-logo" href="#"

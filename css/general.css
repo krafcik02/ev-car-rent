@@ -33,7 +33,7 @@ Black
 
 Secondary
 #fb4d4d Lighter
-#fa2020
+#fa2020 Main
 #c81a1a Darker
 
 ***SHADOWS***
@@ -70,6 +70,12 @@ font-size: 3.2rem;
 ***BORDER RADIUS***
 10px
 */
+
+:root {
+  --main-color: rgba(54, 162, 235, 1);
+  --light-main-color: #5eb5ef;
+  --dark-main-color: #2b82bc;
+}
 
 * {
   margin: 0;
@@ -143,14 +149,14 @@ h1 {
 }
 .btn-experience:link,
 .btn-experience:visited {
-  background-color: #fa2020;
+  background-color: var(--main-color);
   color: #fff;
   transition: 300ms all;
 }
 
 .btn-experience:hover,
 .btn-experience:active {
-  background-color: #c81a1a;
+  background-color: var(--dark-main-color);
 }
 
 .btn-learn-more:link,
@@ -163,4 +169,18 @@ h1 {
 .btn-learn-more:hover,
 .btn-learn-more:active {
   background-color: #f1f1f1;
+}
+.section {
+  transition: all 0.7s;
+}
+.section-hidden {
+  transform: translateY(60rem);
+}
+
+.opacity-zero {
+  opacity: 0;
+  transition: all 0.1s;
+}
+.hidden {
+  display: none;
 }

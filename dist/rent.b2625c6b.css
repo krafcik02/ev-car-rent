@@ -1,0 +1,680 @@
+:root {
+  --main-color: #36a2eb;
+  --light-main-color: #5eb5ef;
+  --dark-main-color: #2b82bc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #1b1b1b;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-dir--column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+h1 {
+  margin-bottom: 2.4rem;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.btn:link, .btn:visited {
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.4rem 2.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-experience:link, .btn-experience:visited {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: all .3s;
+}
+
+.btn-experience:hover, .btn-experience:active {
+  background-color: var(--dark-main-color);
+}
+
+.btn-learn-more:link, .btn-learn-more:visited {
+  background-color: none;
+  color: #1b1b1b;
+  transition: all .3s;
+}
+
+.btn-learn-more:hover, .btn-learn-more:active {
+  background-color: #f1f1f1;
+}
+
+.section {
+  transition: all .7s;
+}
+
+.section-hidden {
+  transform: translateY(60rem);
+}
+
+.opacity-zero {
+  opacity: 0;
+  transition: all .1s;
+}
+
+.hidden {
+  display: none;
+}
+
+.section--header {
+  letter-spacing: -1px;
+  margin-bottom: 9.6rem;
+  font-size: 5.6rem;
+}
+
+.section--subheader {
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: block;
+}
+
+.header-section {
+  flex-direction: column;
+  row-gap: 16rem;
+  padding: 1.2rem 0;
+  display: flex;
+}
+
+.header-nav {
+  width: 100%;
+  justify-content: space-between;
+  font-size: 2rem;
+  display: flex;
+}
+
+.nav-list {
+  min-width: 43%;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2.4rem;
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+}
+
+.nav-logo {
+  color: #1b1b1b;
+  text-transform: uppercase;
+  align-items: center;
+  gap: .8rem;
+  padding-left: 2.4rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.logo-img {
+  width: 50%;
+}
+
+.list-item a {
+  font-size: 1.6rem;
+}
+
+.list-item--link {
+  position: relative;
+}
+
+.list-item:last-of-type a:before {
+  content: none;
+}
+
+.list-item--link:link, .list-item--link:visited {
+  color: #1b1b1b;
+  border-radius: 10px;
+  padding: 1.2rem 2.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+}
+
+.list-item--link:hover, .list-item--link:active {
+  color: var(--main-color);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.list-item--link.cta-link:link, .list-item--link.cta-link:visited {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+.list-item--link.cta-link:hover, .list-item--link.cta-link:active {
+  background-color: var(--dark-main-color);
+}
+
+.section-hero {
+  max-width: 130rem;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 4.8rem 0 9.6rem;
+}
+
+.hero-box {
+  column-gap: 9.6rem;
+  padding: 0 3.2rem;
+}
+
+.hero-text {
+  place-self: center;
+}
+
+.hero-text p {
+  margin-bottom: 5.6rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  column-gap: 4.2rem;
+  display: flex;
+}
+
+.hero-img-box {
+  width: 90%;
+  place-self: flex-start center;
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+}
+
+.section-how {
+  max-width: 120rem;
+  column-gap: 9.6rem;
+  margin: 0 auto;
+  padding: 9.6rem 0 0;
+}
+
+.section-how-location, .section-how-car {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.section-how-car .section-text--box {
+  grid-column: 2;
+}
+
+.section-how-car .section-img--box {
+  grid-area: 1 / 1;
+}
+
+.section-how-payment {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.step-number {
+  color: var(--main-color);
+  letter-spacing: -4px;
+  margin-bottom: 1.8rem;
+  font-size: 8.6rem;
+  font-weight: 900;
+  display: block;
+}
+
+.section-text--box h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.section-text--box p {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+.section-img--box {
+  text-align: center;
+}
+
+.section-img {
+  width: 40%;
+}
+
+.section-car-categories {
+  padding: 9.6rem 0;
+}
+
+.section-car-categories .section--header, .section-car-categories .section--subheader {
+  text-align: center;
+}
+
+.car-categories-box {
+  text-align: center;
+  column-gap: 6.8rem;
+}
+
+.car-category-box {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 5.8rem 2.4rem;
+  transition: all .3s;
+  box-shadow: 0 10px 12px 1px #0003;
+}
+
+.car-category-box:hover {
+  transform: translateY(-1.5rem);
+}
+
+.car-category--header {
+  letter-spacing: 1px;
+  margin-bottom: 1.4rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  display: block;
+}
+
+.car-category--subheader {
+  color: #1b1b1b;
+  text-transform: uppercase;
+  margin-bottom: 4.8rem;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.car-category-box i.car-list--icon {
+  margin-right: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.special-category-box {
+  background-color: var(--light-main-color);
+  color: #1b1b1b;
+}
+
+.special-category-box i.car-list--icon {
+  color: #1b1b1b# ;
+}
+
+.car-category--lists {
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.car-category--list {
+  text-align: left;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.car-list--item, .car-list--item span {
+  align-items: center;
+  font-size: 2rem;
+  display: flex;
+}
+
+.car-list--item:last-of-type {
+  margin-bottom: 0;
+}
+
+.car-list--icon {
+  color: #1b1b1b;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-right: 1rem;
+}
+
+.section-used-cars {
+  padding: 9.6rem 0;
+}
+
+.used-cars-box {
+  width: 90%;
+  max-height: 50rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 10px;
+  margin-block: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b1b1b;
+  border: .1rem solid #ddd;
+  border-radius: 10px;
+}
+
+.used-car-box {
+  width: 100%;
+  grid-template-columns: 40% 43% 17%;
+}
+
+.used-cars-inner {
+  gap: 2.4rem;
+  padding: 3.6rem;
+}
+
+.used-cars-item {
+  color: #1b1b1b;
+  max-height: 15rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.used-car-img {
+  width: 70%;
+  border-radius: 10px 0 0 10px;
+  place-self: center;
+  transition: all .4s;
+  display: block;
+}
+
+.used-car-img:hover {
+  transform: scale(1.1);
+}
+
+.used-car-description {
+  padding: 1.8rem 2.4rem;
+}
+
+.car-description-header {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.car-desciption-items {
+  width: 70%;
+  color: #777;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: center;
+  column-gap: 3.6rem;
+  font-size: 1.2rem;
+}
+
+.car-description-item {
+  flex: 1 0 34%;
+  align-items: flex-start;
+  gap: .6rem;
+  padding: 2.1rem 0 0;
+}
+
+.car-desciption-item:nth-of-type(2n) {
+  align-self: flex-end;
+}
+
+.car-description-item span {
+  display: block;
+}
+
+.description-sub-item {
+  color: #444;
+  display: block;
+}
+
+.car-description-more {
+  color: #1b1b1b;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.buy-used-car {
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+  box-shadow: -.5px 0 #ddd;
+}
+
+.buy-used-car h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.buy-used-car a:link, .buy-used-car a:visited {
+  color: #fff;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  padding: .8rem 1.6rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.buy-used-car a:hover, .buy-used-car a:active {
+  color: var(--main-color);
+}
+
+.section-longterm-cta {
+  padding: 9.6rem 0;
+}
+
+.cta-form-box {
+  background-color: var(--light-main-color);
+  border-radius: 10px;
+  grid-template-columns: 70% 30%;
+  padding: 0 0 0 2.4rem;
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 4.8rem 3.6rem 3.6rem;
+}
+
+.cta-header {
+  margin-bottom: 3.2rem;
+  font-size: 4.2rem;
+}
+
+.cta-text {
+  margin-bottom: 3.8rem;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.cta-form {
+  grid-template-columns: 1fr 1fr;
+  gap: 2.8rem 3.6rem;
+}
+
+.cta-form label {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: block;
+}
+
+.cta-form input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.cta-form select {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.btn--form {
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #1b1b1b;
+  border: 0 solid;
+  border-radius: 10px;
+  align-self: flex-end;
+  padding: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  transition: all .3s;
+  display: block;
+}
+
+.btn--form:hover {
+  color: #1b1b1b;
+  background-color: #fff;
+}
+
+img.cta-img-box {
+  width: 100%;
+  display: block;
+}
+
+.section-footer {
+  border-top: 1px solid #eee;
+  padding: 9.6rem 0;
+  font-size: 1.6rem;
+}
+
+.grid-footer {
+  grid-template-columns: 1.7fr 1.7fr 1fr 1fr 1fr;
+  column-gap: 3.2rem;
+}
+
+.grid-footer > div {
+  padding: 0 1.2rem;
+}
+
+.logo-box img {
+  height: 2.2rem;
+}
+
+.footer-logo {
+  margin-bottom: 3.2rem;
+  display: block;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.social-networks {
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+  list-style: none;
+}
+
+.social-networks i {
+  color: #444;
+  font-size: 2rem;
+}
+
+.imported-icons {
+  margin-bottom: 2.4rem;
+}
+
+.imported-icons, .copyright {
+  font-size: 1rem;
+}
+
+.copyright {
+  margin-bottom: 1rem;
+}
+
+.imported-icons a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-box, .address-box {
+  gap: 2.6rem;
+}
+
+.address-box p {
+  line-height: 1.2;
+}
+
+address {
+  font-style: normal;
+}
+
+.company-address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-subheader {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.footer-nav, .company-address {
+  gap: 2rem;
+  align-items: left;
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+}
+
+.footer-nav a {
+  color: #444;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=rent.b2625c6b.css.map */

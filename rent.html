@@ -5,132 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/rent.css" />
+    <script type="module" defer src="js/rent.js"></script>
     <title>Document</title>
   </head>
-  <body>
-    <section class="section-used-cars">
-      <div class="container">
-        <h3 class="section--subheader">Own a car</h3>
-        <h2 class="section--header">Buy one of our used cars</h2>
-        <div class="used-cars-box">
-          <div class="used-cars-inner flex flex-dir--column">
-            <div class="used-cars-item flex">
-              <div class="used-car-box grid grid--3-cols">
-                <img class="used-car-img flex" src="img/bg-3.jpg" alt="#" />
-                <div class="used-car-description flex flex-dir--column">
-                  <h3 class="car-description-header">Model 3 Long Range</h3>
-                  <div class="car-desciption-items flex">
-                    <span class="car-description-item flex flex-dir--column"
-                      >0-100 km/h
-                      <span class="description-sub-item">3.3sec</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Top Speed
-                      <span class="description-sub-item">260km/h</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Range(WLTP)
-                      <span class="description-sub-item">450km</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Peak Power
-                      <span class="description-sub-item">420kw</span></span
-                    >
-                  </div>
-                  <a class="car-description-more" href="#">More info</a>
-                </div>
-                <div class="buy-used-car flex flex-dir--column">
-                  <h3>53,234 €</h3>
-                  <a href="#">Buy now</a>
-                </div>
-              </div>
-            </div>
-            <div class="used-cars-item flex">
-              <div class="used-car-box grid grid--3-cols">
-                <img class="used-car-img" src="img/bg-3.jpg" alt="" />
-                <div class="used-car-description flex flex-dir--column">
-                  <h3 class="car-description-header">Model 3 Long Range</h3>
-                  <div class="car-desciption-items flex">
-                    <span class="car-description-item flex flex-dir--column"
-                      >0-100 km/h
-                      <span class="description-sub-item">4.4sec</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Top Speed
-                      <span class="description-sub-item">230km/h</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Range(WLTP)
-                      <span class="description-sub-item">430km</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Peak Power
-                      <span class="description-sub-item">324kw</span></span
-                    >
-                  </div>
-                  <a class="car-description-more" href="#">More info</a>
-                </div>
-                <div class="buy-used-car flex flex-dir--column">
-                  <h3>53,234 €</h3>
-                  <a href="#">Buy now</a>
-                </div>
-              </div>
-            </div>
-            <div class="used-cars-item flex">
-              <div class="used-car-box grid grid--3-cols">
-                <img class="used-car-img" src="img/bg-3.jpg" alt="" />
-                <div class="used-car-description flex flex-dir--column">
-                  <h3 class="car-description-header">Model 3 Long Range</h3>
-                  <div class="car-desciption-items flex">
-                    <span class="car-description-item flex flex-dir--column"
-                      >0-100 km/h
-                      <span class="description-sub-item">4.4sec</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Top Speed
-                      <span class="description-sub-item">230km/h</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Range(WLTP)
-                      <span class="description-sub-item">430km</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Peak Power
-                      <span class="description-sub-item">324kw</span></span
-                    >
-                  </div>
-                  <a class="car-description-more" href="#">More info</a>
-                </div>
-                <div class="buy-used-car flex flex-dir--column">
-                  <h3>53,234 €</h3>
-                  <a href="#">Buy now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="used-cars-item flex">
-              <div class="used-car-box grid grid--3-cols">
-                <img class="used-car-img" src="img/bg-3.jpg" alt="" />
-                <div class="used-car-description flex flex-dir--column">
-                  <h3 class="car-description-header">Model 3 Long Range</h3>
-                  <div class="car-desciption-items flex">
-                    <span class="car-description-item flex flex-dir--column"
-                      >0-100 km/h
-                      <span class="description-sub-item">4.4sec</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Top Speed
-                      <span class="description-sub-item">230km/h</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Range(WLTP)
-                      <span class="description-sub-item">430km</span></span
-                    ><span class="car-description-item flex flex-dir--column"
-                      >Peak Power
-                      <span class="description-sub-item">324kw</span></span
-                    >
-                  </div>
-                  <a class="car-description-more" href="#">More info</a>
-                </div>
-                <div class="buy-used-car flex flex-dir--column">
-                  <h3>53,234 €</h3>
-
-                  <a href="#">Buy now</a>
-                </div>
-              </div>
-            </div>
-          </div>
+<body>
+  <div class="container--login-outer hidden">
+    <div class="container--login-middle">
+      <form class="container--login-inner" action="#">
+        <div class="login-input">
+          <label for="username">Username</label>
+          <input type="text" id="username">
         </div>
+        <div class="login-input">
+          <label for="username">Password</label>
+          <input type="password" id="password">
+        </div>
+        <button class="login-button" type="submit">Log in</button>
+      </form>
+    </div>
+  </div>
+  <nav >
+    <div class="nav-bar">
+      <div class="logged-user">
+        <span class="logged-user-icon">👤</span>
+        <span class="logged-user-name">Logged as:</span>
       </div>
-    </section>
-  </body>
+      <button class="logout-user">Log out</button>
+    </div>
+  </nav>
+  <section class="section-main flex flex-dir--column">
+    <div class="section-main-box side-nav">
+      <ul class="side-nav-tabs">
+        <li class="nav-link-main" data-set="main">Main</li>
+        <li class="nav-link-rent" data-set="rent">Rent</li>
+        <li class="nav-link-trips" data-set="trips">My trips</li>
+        <li class="nav-link-stats" data-set="stats">Statistics</li>
+        <li class="nav-link-stats" data-set="points">Charging Points</li>
+      </ul>
+    </div>
+    <div class="section-main-box">
+      <div class="content-box-main">     
+        
+      </div>
+    </div>
+    <!-- <div class="box-rent">
+          <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+          </div>
+          <label for="location">Choose your location</label>
+          <select name="locationSelect" id="location">
+            <option value="empty"></option>
+            <option value="getLocation">Use my location</option>
+            <option value="Kosice">Kosice</option>
+            <option value="Poprad">Poprad</option>
+            <option value="Presov">Presov</option>
+          </select>
+          <div class="buttons-directions">
+            <button class="btn-direction direction-previous">Previous</button>
+            <button class="btn-direction direction-next">Next</button>
+          </div>
+        </div> -->
+    <!-- <div class="section-main-box content-box-main">
+      
+      <div class="chart-rides"><canvas id="myChart" ></canvas></div>
+      <div class="chart-rides"><canvas id="myChart1" ></canvas></div>
+      <div class="chart-rides"><canvas id="myChart2" ></canvas></div>
+      <div class="chart-rides"><canvas id="myChart3" ></canvas></div>
+
+
+    </div> -->
+    
+    <div class="section-main-box"></div>
+  </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
