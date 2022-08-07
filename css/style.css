@@ -42,7 +42,7 @@ HEADER SECTION
 }
 
 .nav-logo {
-  color: #1b1b1b;
+  color: var(--dark-main-text);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 2.6rem;
@@ -70,7 +70,7 @@ HEADER SECTION
 .list-item--link:link,
 .list-item--link:visited {
   text-decoration: none;
-  color: #1b1b1b;
+  color: var(--dark-main-text);
   font-weight: 700;
   display: inline-block;
   padding: 1.2rem 2.4rem;
@@ -87,7 +87,7 @@ HEADER SECTION
 }
 .list-item--link.cta-link:link,
 .list-item--link.cta-link:visited {
-  color: #fff;
+  color: var(--light-text-color);
   background-color: var(--main-color);
 }
 
@@ -149,7 +149,7 @@ HEADER SECTION
   margin: 0 auto;
   column-gap: 9.6rem;
   padding: 9.6rem 0 0 0;
-  /* background-color: #f1f1f1; */
+  /* background-color: var(--light-text-color); */
 }
 
 .section-how-location {
@@ -225,7 +225,7 @@ HEADER SECTION
 .car-category-box {
   padding: 5.8rem 2.4rem;
   border-radius: 10px;
-  background-color: #f1f1f1;
+  background-color: var(--light-text-color);
   box-shadow: 0px 10px 12px 1px rgb(0 0 0 / 20%);
   transition: 300ms all;
 }
@@ -243,7 +243,7 @@ HEADER SECTION
   margin-bottom: 1.4rem;
 }
 .car-category--subheader {
-  color: #1b1b1b;
+  color: var(--dark-main-text);
   text-transform: uppercase;
   font-size: 1.4rem;
   display: inline-block;
@@ -256,11 +256,11 @@ HEADER SECTION
 
 .special-category-box {
   background-color: var(--light-main-color);
-  color: #1b1b1b;
+  color: var(--dark-main-text);
 }
 
 .special-category-box i.car-list--icon {
-  color: #1b1b1b #;
+  color: var(--dark-main-text);
 }
 
 .car-category--lists {
@@ -288,7 +288,7 @@ HEADER SECTION
 }
 
 .car-list--icon {
-  color: #1b1b1b;
+  color: var(--dark-main-text);
   height: 1.8rem;
   width: 1.8rem;
   margin-right: 1rem;
@@ -317,7 +317,7 @@ HEADER SECTION
   margin-block: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1b1b1b;
+  background: var(--dark-main-text);
   border: 0.1rem solid #ddd;
   border-radius: 10px;
 }
@@ -334,8 +334,8 @@ HEADER SECTION
 }
 
 .used-cars-item {
-  background-color: white;
-  color: #1b1b1b;
+  background-color: var(--light-text-color);
+  color: var(--dark-main-text);
   max-height: 15rem;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -394,7 +394,7 @@ HEADER SECTION
 
 .car-description-more {
   font-size: 1.4rem;
-  color: #1b1b1b;
+  color: var(--dark-main-text);
   text-align: center;
 }
 
@@ -414,8 +414,8 @@ HEADER SECTION
 .buy-used-car a:visited {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #fff;
-  background-color: #1b1b1b;
+  color: var(--light-text-color);
+  background-color: var(--main-color);
   padding: 0.8rem 1.6rem;
   border-radius: 10px;
   transition: 300ms all;
@@ -423,7 +423,7 @@ HEADER SECTION
 
 .buy-used-car a:hover,
 .buy-used-car a:active {
-  color: var(--main-color);
+  background-color: var(--dark-main-color);
 }
 
 /***********************************
@@ -492,18 +492,18 @@ HEADER SECTION
   font-weight: 700;
   padding: 1.2rem;
   border-radius: 10px;
-  background-color: #1b1b1b;
+  background-color: var(--main-color);
   border: 0px solid;
-  color: #fff;
+  color: var(--light-text-color);
   align-self: flex-end;
   transition: 300ms all;
   cursor: pointer;
 }
 
 .btn--form:hover {
-  background-color: #fff;
-  /* border-color: #fff; */
-  color: #1b1b1b;
+  background-color: var(--dark-main-color);
+  /* border-color: var(--light-text-color); */
+  /* color: var(--dark-main-text); */
 }
 
 img.cta-img-box {

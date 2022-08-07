@@ -17,7 +17,7 @@ Bold 700
 
 ***COLORS***
 White
-#fff
+ var(--light-text-color)
 #f1f1f1 Shade
 
 Grey
@@ -27,9 +27,7 @@ Grey
 #444
 
 Black
-#1f1f1f
-#1b1b1b
-#222
+var(--dark-text-color)
 
 Secondary
 #fb4d4d Lighter
@@ -72,9 +70,12 @@ font-size: 3.2rem;
 */
 
 :root {
-  --main-color: rgba(54, 162, 235, 1);
-  --light-main-color: #5eb5ef;
-  --dark-main-color: #2b82bc;
+  --main-background-color: rgb(255, 255, 255);
+  --main-color: #36a2eb;
+  --light-main-color: rgb(94, 181, 239);
+  --dark-main-color: rgb(43, 130, 188);
+  --dark-text-color: rgb(5, 16, 23);
+  --light-text-color: #ebf6fd;
 }
 
 * {
@@ -94,7 +95,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #1b1b1b;
+  color: var(--dark-text-color);
   /* Only works if there is nothing absolutely positioned */
   overflow-x: hidden;
   position: relative;
@@ -141,7 +142,7 @@ h1 {
 .btn:link,
 .btn:visited {
   text-decoration: none;
-  color: #fff;
+  color: var(--main-background-color);
   font-size: 2rem;
   font-weight: 600;
   padding: 1.4rem 2.8rem;
@@ -150,7 +151,7 @@ h1 {
 .btn-experience:link,
 .btn-experience:visited {
   background-color: var(--main-color);
-  color: #fff;
+  color: var(--light-text-color);
   transition: 300ms all;
 }
 
@@ -162,13 +163,13 @@ h1 {
 .btn-learn-more:link,
 .btn-learn-more:visited {
   background-color: none;
-  color: #1b1b1b;
+  color: var(--dark-text-color);
   transition: 300ms all;
 }
 
 .btn-learn-more:hover,
 .btn-learn-more:active {
-  background-color: #f1f1f1;
+  background-color: var(--light-text-color);
 }
 .section {
   transition: all 0.7s;

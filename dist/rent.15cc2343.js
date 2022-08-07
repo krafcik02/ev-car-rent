@@ -559,7 +559,7 @@ class Car {
         return `
     <div class="used-cars-item flex">
       <div class="used-car-box grid grid--3-cols">
-        <img class="used-car-img flex" src="./img/cars/${this.model}.png" alt="#" />
+        <img class="used-car-img flex" src="img/cars/${this.model}.png" alt="#" />
         <div class="used-car-description flex flex-dir--column">
           <h3 class="car-description-header">${this.brand[0].toUpperCase()}${this.brand.slice(1)} ${modelEdited}</h3>
           <div class="car-desciption-items flex">
